@@ -104,4 +104,15 @@ class SettingsProfilePage extends StatelessWidget {
               ],
             ),
           ),
-          
+           // Bottom Farm Icons
+          Container(
+            padding: const EdgeInsets.all(16),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.agriculture, color: Colors.green),
+                Icon(Icons.eco, color: Colors.green),
+                Icon(Icons.person_outline, color: Colors.green),
+              ],
+            ),
+          ),
