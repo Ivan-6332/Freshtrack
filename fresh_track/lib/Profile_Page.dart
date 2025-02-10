@@ -150,3 +150,30 @@ class SettingsProfilePage extends StatelessWidget {
     );
   }
 }
+
+class SettingsMenuItem extends StatelessWidget {
+  final IconData icon;
+  final String title;
+
+  const SettingsMenuItem({
+    Key? key,
+    required this.icon,
+    required this.title,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: ListTile(
+        leading: Icon(icon, color: Colors.black),
+        title: Text(title),
+        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+      ),
+    );
+  }
+}
