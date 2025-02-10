@@ -76,4 +76,32 @@ class SettingsProfilePage extends StatelessWidget {
               ],
             ),
           ),
+            // Settings Menu
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.all(16),
+              children: const [
+                SettingsMenuItem(
+                  icon: Icons.settings_outlined,
+                  title: 'System setting',
+                ),
+                SettingsMenuItem(
+                  icon: Icons.privacy_tip_outlined,
+                  title: 'Privacy',
+                ),
+                SettingsMenuItem(
+                  icon: Icons.notifications_outlined,
+                  title: 'Notification',
+                ),
+                SettingsMenuItem(
+                  icon: Icons.help_outline,
+                  title: 'Help & Support',
+                ),
+                SettingsMenuItem(
+                  icon: Icons.description_outlined,
+                  title: 'Terms and Conditions',
+                ),
+              ],
+            ),
+          ),
           
