@@ -116,3 +116,37 @@ class SettingsProfilePage extends StatelessWidget {
               ],
             ),
           ),
+          // Bottom Navigation Bar
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.home, color: Colors.green),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.trending_up, color: Colors.green),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.location_on, color: Colors.green),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.person, color: Colors.green),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
